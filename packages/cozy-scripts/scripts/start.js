@@ -107,7 +107,7 @@ module.exports = buildOptions => {
   const compiler = webpack(appConfig)
   const server = new WebpackDevServer(compiler, WebpackOptions)
 
-  let isFirstRun = true
+  let isFirstRun = false
 
   function clearConsole() {
     if (process.stdout.isTTY) process.stdout.write('\x1Bc')
